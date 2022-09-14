@@ -1,0 +1,33 @@
+---
+title: "Veronica Craven"
+image: images/VWCraven.JPEG
+about:
+  template: solana
+  image-width: 15em
+  image-shape: round
+  image: images/VWCraven.JPEG
+  links:
+    - icon: github
+      text: Github
+      href: https://github.com/vwcraven
+---
+
+## Education/Work Background
+I am an office manager at an independent high school.
+Prior to when I started here six years ago, I spent nine years in a college admissions office and three years working for a municipality. 
+I have an AA in Liberal Arts and a BA in English.
+
+## R experience
+My R experiences is limited to DataCamp's Introduction to R course that I took last month in preparation for our work in this class.
+
+## Research interests
+My interests are in text analysis and data justice, particularly in the non-profit worlds of education/college access and local government.
+
+## Hometown
+I grew up in Framingham, MA, and now live in Chelmsford, MA.
+
+## Hobbies
+I enjoy reading, riding my bike, camping, board games, puzzles, and learning to play Magic the Gathering from my son. 
+
+## Fun fact
+Last summer I conquered a childhood fear. It's tradition to jump off the ferry wharf where we vacation in Maine and I was always too scared to join my cousins. This year I joined my cousins' children and finally took the leap!
