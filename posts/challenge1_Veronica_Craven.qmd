@@ -1,0 +1,66 @@
+---
+title: "Challenge 1 Veronica Craven_Railroad"
+author: "Meredith Rolfe"
+desription: "Reading in data and creating a post"
+date: "09/15/2022"
+format:
+  html:
+    toc: true
+    code-fold: true
+    code-copy: true
+    code-tools: true
+categories:
+  - challenge_1
+  - railroads
+  - faostat
+  - wildbirds
+---
+
+```{r}
+#| label: setup
+#| warning: false
+#| message: false
+
+library(tidyverse)
+
+knitr::opts_chunk$set(echo = TRUE, warning=FALSE, message=FALSE)
+```
+
+## Challenge Overview
+
+-   railroad_2012_clean_county.csv ⭐
+
+
+```{r} 
+railroad <- read_csv("_data/railroad_2012_clean_county.csv")
+
+```
+
+After reading in the csv, we know the size of the data is 2930 observations along with the names and types of the three variables. 
+
+## Describe the data
+
+The cases in this data are the counties that have US railroad employees. The three variables are "state", "county", and "total_employees". 
+
+```{r}
+#| label: summary
+railroad <- read_csv("_data/railroad_2012_clean_county.csv")
+head(railroad)
+
+```
+
+There are 53 unique values under the "state" variable, which is more than the 50 US states. 
+```{r}
+
+grouped_df(railroad, "state")
+
+```
+By examining the present values under the "state" variable, we learn that in addition to the 50 US states, there are "AE", "AP", and "DC". "DC" is the abbreviation for the District of Columbia. "AE" and "AP" refer to abbreviations for the Armed Forces Europe and Armed Forces Pacific respectively. These values indicate that the data is interested in railroad employees that are employed by the United States regardless of their geographic location. 
+
+``` {r}
+categories <- unique(railroad$state)
+categories
+```
+
+
+
